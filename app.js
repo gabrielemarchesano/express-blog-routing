@@ -2,6 +2,8 @@ const express = require ("express");
 const app = express();
 const PORT = 3000;
 
+const postsRouter = require ("./routers/posts");
+
 app.listen(PORT, () => {
   console.log(`App listening in the port ${PORT}`);
 });
@@ -9,3 +11,5 @@ app.listen(PORT, () => {
 app.get("/", (req, res) => {
   res.send("Blog routing");
 })
+
+app.use("/posts", postsRouter);

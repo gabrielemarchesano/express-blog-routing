@@ -72,5 +72,5 @@ router.delete("/:id", (req, res) => {
   res.send("Eliminazione di un post");
 });
 
-module.exports = router;
 module.exports = posts;
+module.exports = router;
