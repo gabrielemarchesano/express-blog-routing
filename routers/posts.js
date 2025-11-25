@@ -62,5 +62,12 @@ router.post("/", (req, res) => {
   res.send("Creazione di un nuovo post");
 });
 
+// update
+router.put("/:id", (req, res) => {
+  res.send("Modifica di un post");
+});
+
+
+
 module.exports = router;
 module.exports = posts;
