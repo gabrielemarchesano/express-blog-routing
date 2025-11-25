@@ -52,5 +52,12 @@ router.get("/", (req, res) => {
   res.send("Lista dei post");
 });
 
+// show
+router.get("/:id", (req, res) => {
+  res.send("Singolo post");
+});
+
+
+
 module.exports = router;
 module.exports = posts;
